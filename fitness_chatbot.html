@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Fitness & Health Assistant</title>
+<link rel="stylesheet" href="fitness_chatbot.css">
+
+</head>
+
+<body>
+<div class="chat-container">
+    <div class="chat-header">
+        <div class="status-dot"></div>
+        <h2>FitBot AI</h2>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+        
+        <div class="message bot">
+            Hi! I'm your AI Fitness & Health Assistant. 
+            I can help you with workout plans, tracking calories,
+            calculating BMI, and more.
+            
+            <br><br>
+            To get started, what's your primary fitness goal? 
+            (e.g., lose weight, build muscle)
+        </div>
+        <div class="typing-indicator" id="typingIndicator">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </div>
+    <div class="chat-input-area">
+        <input 
+            type="text" 
+            id="userInput" 
+            placeholder="Type your message..." 
+            autocomplete="off"
+        >
+
+        <button id="sendBtn">Send</button>
+    </div>
+
+</div>
+<script src="fitness_chatbot.js"></script>
+</body>
+
+</html>
